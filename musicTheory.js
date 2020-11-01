@@ -81,7 +81,9 @@ readline.question('\n*** ARPEGGIO HELPER *** \n \n Please enter any root to see 
             if (arpeggioTypes[arpeggioType]) {
                 let result = returnNotesOfArpeggio(note, arpeggioType);
 
-                console.log(`The notes in ${note} ${arpeggioType} arpeggio are: ${result}`)
+                console.log(`
+                The notes in ${note} ${arpeggioType} arpeggio are: ${result}.\n
+                The intervals from the root are: ${arpeggioTypes[arpeggioType]}.\n`)
                 readline.close();
             }
             else {
